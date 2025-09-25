@@ -1,0 +1,38 @@
+.error-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.error-message {
+  background: rgba(255, 99, 99, 0.9);
+  color: white;
+  padding: 20px 30px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 4px 15px rgba(255, 99, 99, 0.3);
+  backdrop-filter: blur(10px);
+  max-width: 500px;
+  text-align: center;
+}
+
+.error-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.error-message p {
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .error-message {
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
